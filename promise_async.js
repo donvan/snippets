@@ -68,6 +68,7 @@ s.next().value.then(res => {
 
 // Async/await 
 // 可以理解成自动执行的Generator函数
+// async函数返回的是一个Promsie对象
 
 const fs = require("fs");
 const read = function(fileName){
