@@ -1,4 +1,4 @@
-//构造函数、实例、原型
+//构造函数、实例、原型 
 function MVue({ methods }) {
     for (let key in methods) {
         this[key] = methods[key];
