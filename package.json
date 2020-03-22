@@ -1,0 +1,24 @@
+{
+  "name": "snippets",
+  "version": "1.0.0",
+  "description": "code snippets",
+  "main": "array.form.js",
+  "dependencies": {
+    "echarts": "^4.7.0",
+    "echarts-bmap": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donvan/snippets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donvan/snippets/issues"
+  },
+  "homepage": "https://github.com/donvan/snippets#readme"
+}
