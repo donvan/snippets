@@ -17,5 +17,19 @@ function extend(dest) {
     return dest
 }
 
-extend({},{a:1},{b:2,c:3})
+extend({}, { a: 1 }, { b: 2, c: 3 })
 extend({})
+
+/**
+ * @function create (proto:object)
+ * @return Object
+ */
+var create = Object.create || (function () {
+    function F() { }
+    return function (proto) {
+        F.prototype = proto;
+        return new F();
+    };
+})();
+
+create({})
