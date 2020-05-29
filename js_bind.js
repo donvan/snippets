@@ -14,4 +14,21 @@ console.log(unboundGetX()); // The function gets invoked at the global scope
 
 const boundGetX = unboundGetX.bind(module);  //bind方法创建一个新的函数 ，this指定为传入的module参数
 console.log(boundGetX());
-  // expected output: 42
+// expected output: 42
+
+
+// 实现下bind方法
+// @function bind(fn: Function, …): Function
+// Returns a new function bound to the arguments passed
+function bind(fn, obj) {
+    const slice = Array.prototype.slice;
+
+    if (fn.bind) {
+        return fn.bind.apply(fn, slice.call(arguments, 1));
+    }
+
+    let args = slice.call(arguments, 2);
+    return function () {
+        return fn.apply(obj, args.length ? args.concat(slice.call(arguments)) : arguments);
+    };
+}
