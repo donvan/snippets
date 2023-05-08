@@ -4,7 +4,7 @@
   "description": "code snippets",
   "main": "array.form.js",
   "dependencies": {
-    "echarts": "^4.7.0",
+    "echarts": "^5.4.2",
     "echarts-bmap": "^1.0.3"
   },
   "devDependencies": {},
